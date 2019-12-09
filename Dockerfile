@@ -2,6 +2,7 @@ FROM arm32v7/node:12.13.1-alpine
 MAINTAINER barrtailor
 
 #Enable building on Docker Hub
+RUN curl -L https://github.com/balena-io/qemu/releases/download/v3.0.0%2Bresin/qemu-3.0.0+resin-arm.tar.gz | tar zxvf - -C . && mv qemu-3.0.0+resin-arm/qemu-arm-static .
 FROM arm32v7/alpine:latest
 COPY qemu-arm-static /usr/bin
 
