@@ -1,5 +1,5 @@
 FROM arm32v7/node:12.13.1-alpine
-MAINTAINER Sandeep Gupta <tech.gfamily@gmail.com>
+MAINTAINER barrtailor
 
 # Create our application direcory
 RUN mkdir -p /usr/src/app
