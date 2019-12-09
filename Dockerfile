@@ -2,6 +2,7 @@ FROM arm32v7/node:12.13.1-alpine
 MAINTAINER barrtailor
 
 #Enable building on Docker Hub
+FROM arm32v7/alpine:latest
 COPY qemu-arm-static /usr/bin
 
 # Create our application direcory
